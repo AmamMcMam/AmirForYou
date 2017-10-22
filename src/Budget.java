@@ -36,7 +36,7 @@ public class Budget {
         while (getTotal()<limit){
             float f = limit - getTotal();
             System.out.print("You have "+f+" left");
-            System.out.println("add more stuff");
+            System.out.println("\nadd more stuff");
             add(limit);
         }
 
