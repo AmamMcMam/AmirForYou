@@ -9,13 +9,19 @@ public class Main {
 	private int budget = 0;
 	//Create an ArrayList
 	
+    private void add(List<Receipt> recs){
+        for(Receipt r: recs){
+            add(r);
+        }
+    }
+
 	private void add(float price, String description){
-		receipt.add(price, description);
-		
-		int last = receipt.size();
-		
-		
-		
+        Receipt r = new Recept(price, description);
+        add(r);
+    }
+
+    private void add(Receipt r){
+		receipt.add(r);
 	}
 	
 	
