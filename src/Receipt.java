@@ -8,7 +8,15 @@ public class Receipt {
 		this.price = price;
 		this.description = description;
 	}
-	
+
+	@Override
+	public String toString() {
+		return "Receipt{" +
+				"price=" + price +
+				", description='" + description + '\'' +
+				'}';
+	}
+
 	public float getPrice(){
 		return price;
 	}
