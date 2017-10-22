@@ -1,46 +1,17 @@
-import java.util.ArrayList;
-import java.util.List;
-
-
-
+import java.util.Scanner;
 
 public class Main {
-	
-	static ArrayList receipt = new ArrayList<Receipt>();
-	private int budget = 0;
-	//Create an ArrayList
-	
-    private static void add(List<Receipt> recs){
-        for(Receipt r: recs){
-            add(r);
-        }
+
+    public static void main(String[] args) {
+
+        System.out.println("done fam");
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("enter limit: ");
+        float limit = scanner.nextFloat();
+        System.out.print("\n enter number: ");
+        String nu = scanner.next();
+
+        Budget b = new Budget(limit,nu);
+
     }
-
-	private static void add(float price, String description){
-        Receipt r = new Receipt(price, description);
-        add(r);
-    }
-
-    private static void add(Receipt r){
-		receipt.add(r);
-	}
-	
-	
-	
-	//insert into ArrayList
-
-	//get ArrayList
-	
-	//Set ArrayList
-	
-	
-	public static void main(String[] args) {
-		
-		add(200, "Xbox second hand");
-		System.out.println("done fam");
-		
-		
-
-	}
-
 }
