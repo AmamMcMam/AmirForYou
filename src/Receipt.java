@@ -4,7 +4,7 @@ public class Receipt {
 	private float price;
 	private String description;
 	
-	public void Receipt(float price, String description){
+	public Receipt(float price, String description){
 		this.price = price;
 		this.description = description;
 	}

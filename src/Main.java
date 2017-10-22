@@ -1,26 +1,27 @@
 import java.util.ArrayList;
+import java.util.List;
 
 
 
 
 public class Main {
 	
-	ArrayList receipt = new ArrayList<Receipt>();
+	static ArrayList receipt = new ArrayList<Receipt>();
 	private int budget = 0;
 	//Create an ArrayList
 	
-    private void add(List<Receipt> recs){
+    private static void add(List<Receipt> recs){
         for(Receipt r: recs){
             add(r);
         }
     }
 
-	private void add(float price, String description){
-        Receipt r = new Recept(price, description);
+	private static void add(float price, String description){
+        Receipt r = new Receipt(price, description);
         add(r);
     }
 
-    private void add(Receipt r){
+    private static void add(Receipt r){
 		receipt.add(r);
 	}
 	
@@ -34,6 +35,9 @@ public class Main {
 	
 	
 	public static void main(String[] args) {
+		
+		add(200, "Xbox second hand");
+		System.out.println("done fam");
 		
 		
 
