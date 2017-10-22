@@ -1,5 +1,9 @@
-﻿::get::
+﻿::get::git 
 
-send git %space%
+::1::git clone 
 
-return
+::2::git pull 
+
+::3::sexytoast123
+
+::4::git killMyself
